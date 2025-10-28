@@ -21,7 +21,8 @@ public class Game {
                 System.out.println(maskedWord.getMask());
                 String letter;
 
-                while (!maskedWord.gameWon()) {
+                while (!maskedWord.gameWon() && incorrectTries < TRIES) {
+
                     System.out.println("Введите букву: ");
                     letter = scanner.nextLine();
 
