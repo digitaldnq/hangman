@@ -37,6 +37,10 @@ public class MaskedWord {
         }
     }
 
+    public boolean isLetterInWord(String letter) {
+        return word.contains(letter.toUpperCase());
+    }
+
     public boolean gameWon() {
         return Arrays.stream(mask).noneMatch(x -> x.equals("*"));
     }
