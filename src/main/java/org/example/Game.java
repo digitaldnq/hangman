@@ -31,6 +31,14 @@ public class Game {
                     } else {
                         maskedWord.userLetterInput(letter);
                         maskedWord.updateMask(letter);
+                    } else {
+                        incorrectTries++;
+                        System.out.println("Попытка номер : " + incorrectTries);
+                        if (incorrectTries >= TRIES) {
+                            System.out.println("Конец игры!");
+                            System.exit(0);
+                        }
+
                     }
                 }
 
