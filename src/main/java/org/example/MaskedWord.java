@@ -28,6 +28,10 @@ public class MaskedWord {
         return usedLetters.contains(letter);
     }
 
+    public void showAllUserInputs(){
+        System.out.println(usedLetters);
+    }
+
     void updateMask(String letter) {
         for (int i = 0; i < word.length(); i++) {
             if (Character.toString(word.charAt(i)).equalsIgnoreCase(letter)) {
