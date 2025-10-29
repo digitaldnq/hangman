@@ -28,8 +28,10 @@ public class Game {
                     letter = scanner.nextLine();
 
                     if (maskedWord.isLetterAlreadyUsed(letter)) {
-                        System.out.println("Эта буква уже есть: " + letter);
-                    } else {
+                        System.out.println("Эта буква уже есть: \nИспользованные буквы : ");
+
+                        maskedWord.showAllUserInputs();
+                    } else if (maskedWord.isLetterInWord(letter)) {
                         maskedWord.userLetterInput(letter);
                         maskedWord.updateMask(letter);
                     } else {
