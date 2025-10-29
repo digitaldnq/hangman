@@ -11,7 +11,7 @@ public class MaskedWord {
     public void setWord() { // генерация рандом слова
         HashMap<Integer, String> map = DictionaryEnd.deserializedHashMap("src/main/resources/lewa");
         int digit = (int) (Math.random() * map.size());
-        System.out.println("Слово загаданно!");
+        System.out.println("Слово загаданно.");
         this.word = map.get(digit).toUpperCase();
     }
 

@@ -27,17 +27,5 @@ public class DictionaryEnd {
             obj2.printStackTrace();
         }
         return new HashMap<>();
-
-        /*// Iterator
-        Set set = newHashMap.entrySet();
-        Iterator iterator = set.iterator();
-
-        while (iterator.hasNext()) {
-            Map.Entry entry = (Map.Entry) iterator.next();
-
-            System.out.print(entry.getKey()
-                    + " : ");
-            System.out.println(entry.getValue());
-        }*/
     }
 }
