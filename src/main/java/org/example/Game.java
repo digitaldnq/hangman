@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Game {
 
     private final MaskedWord maskedWord = new MaskedWord();
-    private static final int TRIES = 6;
-
+    private static final int MAX_TRIES = 7;
+    private final HangmanDrawer hangmanDrawer = new HangmanDrawer();
+    
     public void start() {
         Scanner scanner = new Scanner(System.in);
         String option;
