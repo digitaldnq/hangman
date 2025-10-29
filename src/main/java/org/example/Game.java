@@ -35,8 +35,15 @@ public class Game {
                     } else {
                         incorrectTries++;
                         System.out.println("Попытка номер : " + incorrectTries);
-                        if (incorrectTries >= TRIES) {
-                            System.out.println("Конец игры!");
+                        System.out.println();
+                        hangmanDrawer.drawHangman(incorrectTries);
+
+                        System.out.print("Использованные буквы : ");
+                        maskedWord.showAllUserInputs();
+                        if (incorrectTries >= MAX_TRIES) {
+                            System.out.println("Загаданное слово : " + maskedWord.getWord());
+
+                            System.out.println("Конец игры.");
                             System.exit(0);
                         }
 
